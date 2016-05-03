@@ -1,0 +1,43 @@
+<html ng-app="homeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convertor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="navbarTop">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="row-xs-12">
+                    <li><a ui-sref="page1">Miles & Kilometers</a></li>
+                    <li><a ui-sref="page2">Fahrenheit & Celsisus</a></li>
+                    <li><a ui-sref="page3">Pounds & Kilograms</a></li>
+                    <li><a ui-sref="page4">Inches & Foot</a></li>
+                    <li><a ui-sref="page5">BMI</a></li>
+                    <li><a ui-sref="page6">Loan</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <ui-view></ui-view>
+    </div>
+   <h1>Convertor</h1>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/app-routes.js"></script>
+    <script src="app/page1/page1.js"></script>
+    <script src="app/page2/page2.js"></script>
+    <script src="app/page3/page3.js"></script>
+    <script src="app/page4/page4.js"></script>
+    <script src="app/page5/page5.js"></script>
+    <script src="app/page6/page6.js"></script>
+</body>
+</html>

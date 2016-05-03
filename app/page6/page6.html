@@ -1,0 +1,10 @@
+<div class="row">
+            <div class="col-xs-12 center-block text-center" ng-controller="LoanController as lc">
+                <h1>${{lc.answer | number:1}}</h1>
+                <button type="submit" class="btn btn-success btn-bottom" ng-click="lc.loan()">Convert</button>
+                <button type="submit" class="btn btn-danger btn-bottom" ng-click="lc.answer = lc.answer = 0">Clear</button>
+                <input type="text" class="form-control input-tiny center-block input-shrink" id="exampleInputName2" placeholder="Total Amount" ng-model="lc.amount">
+                <input type="text" class="form-control input-tiny center-block input-shrink" id="exampleInputName2" placeholder="Intrest Rate" ng-model="lc.intrest">
+                <input type="text" class="form-control margin-bottom center-block input-shrink" id="exampleInputName2" placeholder="Payment Duration" ng-model="lc.payment"> 
+            </div>
+        </div>

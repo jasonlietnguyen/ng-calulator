@@ -1,0 +1,9 @@
+<div class="row">
+            <div class="col-xs-12 center-block text-center" ng-controller="WeightController as wc">
+                <h1>{{wc.answer | number:1}}</h1>
+                <button type="submit" class="btn btn-success btn-bottom" ng-click="wc.klToPounds()">Pounds to Kilograms</button>
+                <button type="submit" class="btn btn-success btn-bottom" ng-click="wc.poundsToKl()">Kilograms to Pounds</button>
+                <button type="submit" class="btn btn-danger btn-bottom" ng-click="wc.answer = bc.answer = 0">Clear</button>
+                <input type="text" class="form-control margin-bottom center-block input-shrink" id="exampleInputName2" placeholder="Amount" ng-model="wc.count"> 
+            </div>
+        </div>

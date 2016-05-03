@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-xs-12 center-block text-center">
+        <h1>{{bc.answer | number:1}}%</h1>
+        <button type="submit" class="btn btn-success btn-bottom" ng-click="bc.bmi()">Convert</button>
+        <button type="submit" class="btn btn-danger btn-bottom" ng-click="bc.answer = bc.answer = 0">Clear</button>
+        <input type="text" class="form-control input-tiny center-block input-shrink" id="exampleInputName2" placeholder="Height in Inches"
+        ng-model="bc.height">
+        <input type="text" class="form-control margin-second-bottom center-block input-shrink" id="exampleInputName2" placeholder="Weight in Pounds"
+        ng-model="bc.weight">
+    </div>
+</div>

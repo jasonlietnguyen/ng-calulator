@@ -1,0 +1,9 @@
+        <div class="row">
+            <div class="col-xs-12 center-block text-center">
+                <h1>{{tc.answer | number:1}}</h1>
+                <button type="submit" class="btn btn-success btn-bottom" ng-click="tc.fToC()">Fahrenheit to Celsius</button>
+                <button type="submit" class="btn btn-success btn-bottom" ng-click="tc.cToF()">Celsisus to Fahrenheit </button>
+                <button type="submit" class="btn btn-danger btn-bottom" ng-click="tc.answer = tc.answer = 0">Clear</button>
+                <input type="text" class="form-control margin-bottom center-block input-shrink" id="exampleInputName2" placeholder="Temperature" ng-model="tc.count">
+            </div>
+        </div>

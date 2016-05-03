@@ -1,0 +1,9 @@
+<div class="row">
+            <div class="col-xs-12 center-block text-center" ng-controller="Length2Controller as lc2">
+            <h1>{{lc2.answer | number:1}}</h1>
+            <button type="submit" class="btn btn-success btn-bottom" ng-click="lc2.inchToFoot()">Inches to Foot</button>
+            <button type="submit" class="btn btn-success btn-bottom" ng-click="lc2.footToInch()">Foot to Inches</button>
+            <button type="submit" class="btn btn-danger btn-bottom" ng-click="lc2.answer = lc2.answer = 0">Clear</button>
+            <input type="text" class="form-control margin-bottom center-block input-shrink" id="exampleInputName2" placeholder="Amount" ng-model="lc2.count"> 
+            </div>
+        </div>
